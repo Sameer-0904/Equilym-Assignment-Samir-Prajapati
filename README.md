@@ -2,7 +2,7 @@
 
 **Equilym Assignment 4 — Automated Insight Generation**  
 **Author:** Samir Prajapati  
-**Stack:** Python 3.11 · Streamlit · Pandas · NumPy · SciPy · Plotly · Pytest · Docker  
+**Stack:** Python 3.11 · Streamlit · Pandas · NumPy · SciPy · Plotly · Pytest
 
 ---
 
