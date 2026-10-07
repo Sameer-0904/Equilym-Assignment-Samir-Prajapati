@@ -52,31 +52,10 @@ All 19 automated tests (Golden tests, Generality tests on synthetic datasets, an
 
 ---
 
-## 🐳 Docker & Cloud Deployment (Render-Ready)
-
-A production-grade multi-stage `Dockerfile` is included in the root directory.
-
-### Build and Run Locally with Docker:
-```bash
-docker build -t equilym-health-engine .
-docker run -p 8501:8501 equilym-health-engine
-```
-
-### Deploy to Render:
-1. Push repository to GitHub.
-2. In Render, select **New → Web Service** and link the repository.
-3. Render automatically detects the `Dockerfile`.
-4. Ensure **Port** is set to `8501`.
-5. Deploy!
-
----
-
 ## 🏗️ Architecture & Folder Structure
 
 ```
 ├── app.py                    # Streamlit Dashboard (Executive UI & Interactive Visuals)
-├── Dockerfile                # Production Docker container for Render
-├── .dockerignore             # Optimized build context
 ├── requirements.txt          # Core dependencies (pandas, streamlit, plotly, scipy, etc.)
 ├── requirements-dev.txt      # Testing suite dependencies (pytest, pytest-cov)
 ├── README.md                 # Complete system documentation
@@ -98,9 +77,7 @@ docker run -p 8501:8501 equilym-health-engine
 │   ├── test_golden.py        # Verified mathematical golden assertions
 │   ├── test_generality.py    # Zero-hardcode proof with completely novel datasets
 │   └── test_no_hardcode.py   # AST/source lint test asserting zero hardcoded names
-└── docs/
-    ├── PRD.md                # Comprehensive Product Requirements Document
-    └── 04-automated-insight-generation - AI_ML.pdf
+
 ```
 
 ---
