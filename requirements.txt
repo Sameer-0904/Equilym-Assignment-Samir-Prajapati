@@ -1,0 +1,12 @@
+# Core runtime dependencies
+pandas>=2.0.0
+numpy>=1.24.0
+scipy>=1.11.0
+streamlit>=1.30.0,<1.45.0
+plotly>=5.18.0
+# Pillow pinned below 12 due to Streamlit 1.44.x compatibility
+pillow>=7.1.0,<12
+
+# Optional: LLM summary feature (S6 stand-out, off by default in the UI)
+# Enabled — user has a Gemini API key. Keep GEMINI_API_KEY in .env / Render env vars.
+google-generativeai>=0.4.0
